@@ -10,10 +10,6 @@ body {
   justify-content: center; */
 }
 
-nav {
-  /* position: fixed; */
-}
-
 #center-welcome-sign-div {
   padding-top: 5em;
   display: flex;
@@ -27,7 +23,6 @@ nav {
 
 .introduction-section {
   height: 900px;
-  display: inline-block;
   text-align: center;
 }
 
@@ -61,7 +56,9 @@ li a {
 }
 
 li a.hover {
-  color: yel
+  text-decoration: none;
+  background-color: #ddd;
+  color: yellow;
 }
 
 p {
@@ -70,8 +67,9 @@ p {
 }
 
 .summary-container {
-
-  width: 50%;
+  width: 55%;
+  padding: 3%;
+  margin: auto;
 }
 
 .button-div {
@@ -85,32 +83,47 @@ p {
 
 .heading {
   text-align: center;
+  padding: 10px;
+
 }
 
 .heading-description {
   text-align: center;
+  padding-top: 5px;
 }
 
 #gallery-section {
-  height: 900px;
+  display: flex;
   background-color: gainsboro;
   padding: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  bottom: 5px;
 }
 
 .card-container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
+}
 
+.card-body {
+  text-align: center;
 }
 
 .card {
   height: 400px;
-
   margin: 5px;
 }
 
-.card-body {}
+.card-images {
+  max-width: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
 
 .card-title {
   font-family: 'Amatic SC', cursive;
@@ -130,6 +143,10 @@ p {
   flex-wrap: no wrap;
 }
 
+.current-status-container {
+  margin-top: 50px;
+}
+
 .footer-container {
   height: 200 px;
 }
@@ -137,8 +154,16 @@ p {
 .footer {
   display: flex;
   justify-content: center;
-  background-color: yellow;
+  background-color: #39ff14;
+  padding: 10px;
 }
+
+/* @media (max-width: 950px) {
+  #gallery-section {
+    background-color: yellow;
+    padding: 15px;
+  }
+} */
 
 /* typewriter effect */
 .typewriter h1 {
@@ -181,5 +206,64 @@ p {
 
   50% {
     border-color: black;
+  }
+}
+
+/* boot strap contacts form */
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.contact-container {
+  padding: 15px;
+  background-color: grey;
+  color: white;
+  text-align: center;
+
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .column,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }
