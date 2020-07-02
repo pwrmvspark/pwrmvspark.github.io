@@ -20,14 +20,15 @@ nav {
   justify-content: center;
 }
 
-.image-div {
+.home-image-div {
   margin-top: 5%;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
 }
 
 .introduction-section {
   height: 900px;
+  display: inline-block;
+  text-align: center;
 }
 
 ul {
@@ -68,6 +69,11 @@ p {
   text-align: center;
 }
 
+.summary-container {
+
+  width: 50%;
+}
+
 .button-div {
   display: flex;
   justify-content: center;
@@ -75,6 +81,14 @@ p {
 
 .button {
   margin: 50px 5px 0px 5px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading-description {
+  text-align: center;
 }
 
 #gallery-section {
@@ -120,14 +134,10 @@ p {
   height: 200 px;
 }
 
-.page-footer {
-  background-color: grey !important;
-  height: 250px;
-}
-
-.short-footer {
+.footer {
   display: flex;
-  flex-flow: row;
+  justify-content: center;
+  background-color: yellow;
 }
 
 /* typewriter effect */
